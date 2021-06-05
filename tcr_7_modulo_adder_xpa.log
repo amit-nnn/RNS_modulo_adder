@@ -1,0 +1,20 @@
+Creating log file M:\desktop\project
+file\rns_modulo_adder\tcr_7_modulo_adder_xpa.log.
+Loading device for application Rf_Device from file '7a100t.nph' in environment
+C:\Xilinx\14.5\ISE_DS\ISE\.
+   "tcr_7_modulo_adder" is an NCD, version 3.2, device xc7a100t, package csg324,
+speed -3
+
+INFO:Power:1690 - 
+   --------------------------------------------------------------
+                         The power estimate will be calculated using ADVANCED
+   data.
+   --------------------------------------------------------------
+
+Design load 20% completeDesign load 25% completeDesign load 30% completeDesign load 60% completeDesign load 95% completeDesign load 100% completeRunning Vector-less Activity Propagation
+......
+Finished Running Vector-less Activity Propagation
+Finished Running Vector-less Activity Propagation 0 secs 
+
+Design 'tcr_7_modulo_adder.ncd' and constraints 'tcr_7_modulo_adder.pcf' opened successfully
+

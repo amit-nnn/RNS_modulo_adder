@@ -1,0 +1,29 @@
+Command line:
+   ohc_11_modulo_adder_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52689
+
+Sat Jun 05 11:55:03 2021
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5146.72 Meg
+
+ Total Signals          : 19
+ Total Nets             : 123
+ Total Signal Drivers   : 93
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 94
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 203
+Total Line Count : 102
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4674.86 Meg
+
+Sat Jun 05 16:39:07 2021
+
