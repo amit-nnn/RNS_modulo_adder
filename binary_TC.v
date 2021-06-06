@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
-module binary_TC(a,b);
-    input [2:0]a;
-    output reg [6:1]b;
+module binary_TC(in,out);
+    input [2:0]in;
+    output reg [6:1]out;
     always @(*) begin
-        case (a)
-            3'b000: b = 000000;
-            3'b001: b = 000001;
-            3'b010: b = 000011;
-            3'b011: b = 000111;
-            3'b100: b = 001111;
-            3'b101: b = 011111;
-            3'b110: b = 111111;
+        case (in)
+            3'b001: out = 6'b000001;
+            3'b010: out = 6'b000011;
+            3'b011: out = 6'b000111;
+            3'b100: out = 6'b001111;
+            3'b101: out = 6'b011111;
+            3'b110: out = 6'b111111;
+            default: out = 6'b000000;
         endcase
     end
 endmodule

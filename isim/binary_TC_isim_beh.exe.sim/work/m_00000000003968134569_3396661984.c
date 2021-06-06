@@ -22,20 +22,17 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "M:/desktop/project file/rns_modulo_adder/binary_TC.v";
-static unsigned int ng1[] = {0U, 0U};
-static int ng2[] = {0, 0};
-static unsigned int ng3[] = {1U, 0U};
-static int ng4[] = {1, 0};
-static unsigned int ng5[] = {2U, 0U};
-static int ng6[] = {11, 0};
-static unsigned int ng7[] = {3U, 0U};
-static int ng8[] = {111, 0};
-static unsigned int ng9[] = {4U, 0U};
-static int ng10[] = {1111, 0};
-static unsigned int ng11[] = {5U, 0U};
-static int ng12[] = {11111, 0};
-static unsigned int ng13[] = {6U, 0U};
-static int ng14[] = {111111, 0};
+static unsigned int ng1[] = {1U, 0U};
+static unsigned int ng2[] = {2U, 0U};
+static unsigned int ng3[] = {3U, 0U};
+static unsigned int ng4[] = {7U, 0U};
+static unsigned int ng5[] = {4U, 0U};
+static unsigned int ng6[] = {15U, 0U};
+static unsigned int ng7[] = {5U, 0U};
+static unsigned int ng8[] = {31U, 0U};
+static unsigned int ng9[] = {6U, 0U};
+static unsigned int ng10[] = {63U, 0U};
+static unsigned int ng11[] = {0U, 0U};
 
 
 
@@ -76,77 +73,72 @@ LAB6:    t4 = ((char*)((ng1)));
     if (t6 == 1)
         goto LAB7;
 
-LAB8:    t2 = ((char*)((ng3)));
+LAB8:    t2 = ((char*)((ng2)));
     t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
     if (t6 == 1)
         goto LAB9;
 
-LAB10:    t2 = ((char*)((ng5)));
+LAB10:    t2 = ((char*)((ng3)));
     t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
     if (t6 == 1)
         goto LAB11;
 
-LAB12:    t2 = ((char*)((ng7)));
+LAB12:    t2 = ((char*)((ng5)));
     t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
     if (t6 == 1)
         goto LAB13;
 
-LAB14:    t2 = ((char*)((ng9)));
+LAB14:    t2 = ((char*)((ng7)));
     t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
     if (t6 == 1)
         goto LAB15;
 
-LAB16:    t2 = ((char*)((ng11)));
+LAB16:    t2 = ((char*)((ng9)));
     t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
     if (t6 == 1)
         goto LAB17;
 
-LAB18:    t2 = ((char*)((ng13)));
-    t6 = xsi_vlog_unsigned_case_compare(t5, 3, t2, 3);
-    if (t6 == 1)
-        goto LAB19;
-
+LAB18:
 LAB20:
+LAB19:    xsi_set_current_line(13, ng0);
+    t2 = ((char*)((ng11)));
+    t3 = (t0 + 1448);
+    xsi_vlogvar_assign_value(t3, t2, 0, 0, 6);
+
 LAB21:    goto LAB2;
 
 LAB7:    xsi_set_current_line(7, ng0);
-    t7 = ((char*)((ng2)));
+    t7 = ((char*)((ng1)));
     t8 = (t0 + 1448);
     xsi_vlogvar_assign_value(t8, t7, 0, 0, 6);
     goto LAB21;
 
 LAB9:    xsi_set_current_line(8, ng0);
-    t3 = ((char*)((ng4)));
+    t3 = ((char*)((ng3)));
     t4 = (t0 + 1448);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
     goto LAB21;
 
 LAB11:    xsi_set_current_line(9, ng0);
-    t3 = ((char*)((ng6)));
+    t3 = ((char*)((ng4)));
     t4 = (t0 + 1448);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
     goto LAB21;
 
 LAB13:    xsi_set_current_line(10, ng0);
-    t3 = ((char*)((ng8)));
+    t3 = ((char*)((ng6)));
     t4 = (t0 + 1448);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
     goto LAB21;
 
 LAB15:    xsi_set_current_line(11, ng0);
-    t3 = ((char*)((ng10)));
+    t3 = ((char*)((ng8)));
     t4 = (t0 + 1448);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
     goto LAB21;
 
 LAB17:    xsi_set_current_line(12, ng0);
-    t3 = ((char*)((ng12)));
-    t4 = (t0 + 1448);
-    xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
-    goto LAB21;
-
-LAB19:    xsi_set_current_line(13, ng0);
-    t3 = ((char*)((ng14)));
+    t3 = ((char*)((ng10)));
     t4 = (t0 + 1448);
     xsi_vlogvar_assign_value(t4, t3, 0, 0, 6);
     goto LAB21;

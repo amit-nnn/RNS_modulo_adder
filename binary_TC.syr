@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.17 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: binary_TC.prj
 
@@ -113,10 +113,6 @@ Parsing module <binary_TC>.
 =========================================================================
 
 Elaborating module <binary_TC>.
-WARNING:HDLCompiler:413 - "M:\desktop\project file\rns_modulo_adder\binary_TC.v" Line 10: Result of 7-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "M:\desktop\project file\rns_modulo_adder\binary_TC.v" Line 11: Result of 11-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "M:\desktop\project file\rns_modulo_adder\binary_TC.v" Line 12: Result of 14-bit expression is truncated to fit in 6-bit target.
-WARNING:HDLCompiler:413 - "M:\desktop\project file\rns_modulo_adder\binary_TC.v" Line 13: Result of 17-bit expression is truncated to fit in 6-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -124,22 +120,17 @@ WARNING:HDLCompiler:413 - "M:\desktop\project file\rns_modulo_adder\binary_TC.v"
 
 Synthesizing Unit <binary_TC>.
     Related source file is "M:\desktop\project file\rns_modulo_adder\binary_TC.v".
-WARNING:Xst:737 - Found 1-bit latch for signal <b<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <b<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <b<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <b<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <b<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 1-bit latch for signal <b<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8x6-bit Read Only RAM for signal <b>
     Summary:
-	inferred   6 Latch(s).
+	inferred   1 RAM(s).
 Unit <binary_TC> synthesized.
 
 =========================================================================
 HDL Synthesis Report
 
 Macro Statistics
-# Latches                                              : 6
- 1-bit latch                                           : 6
+# RAMs                                                 : 1
+ 8x6-bit single-port Read Only RAM                     : 1
 
 =========================================================================
 
@@ -148,10 +139,27 @@ Macro Statistics
 =========================================================================
 
 
+Synthesizing (advanced) Unit <binary_TC>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_b> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 6-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <a>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <b>             |          |
+    -----------------------------------------------------------------------
+Unit <binary_TC> synthesized (advanced).
+
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# RAMs                                                 : 1
+ 8x6-bit single-port distributed Read Only RAM         : 1
+
 =========================================================================
 
 =========================================================================
@@ -191,11 +199,8 @@ Top Level Output File Name         : binary_TC.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 7
-#      LUT2                        : 1
+# BELS                             : 6
 #      LUT3                        : 6
-# FlipFlops/Latches                : 6
-#      LD                          : 6
 # IO Buffers                       : 9
 #      IBUF                        : 3
 #      OBUF                        : 6
@@ -207,20 +212,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    7  out of  63400     0%  
-    Number used as Logic:                 7  out of  63400     0%  
+ Number of Slice LUTs:                    6  out of  63400     0%  
+    Number used as Logic:                 6  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      7
-   Number with an unused Flip Flop:       7  out of      7   100%  
-   Number with an unused LUT:             0  out of      7     0%  
-   Number of fully used LUT-FF pairs:     0  out of      7     0%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:      6
+   Number with an unused Flip Flop:       6  out of      6   100%  
+   Number with an unused LUT:             0  out of      6     0%  
+   Number of fully used LUT-FF pairs:     0  out of      6     0%  
+   Number of unique control sets:         0
 
 IO Utilization: 
  Number of IOs:                           9
  Number of bonded IOBs:                   9  out of    210     4%  
-    IOB Flip Flops/Latches:               6
 
 Specific Feature Utilization:
 
@@ -242,15 +246,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-_n0023<1>(_n0023<1>1:O)            | NONE(*)(b_4)           | 6     |
------------------------------------+------------------------+-------+
-(*) This 1 clock signal(s) are generated by combinatorial logic,
-and XST is not able to identify which are the primary clock signals.
-Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
-INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -261,52 +257,32 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 0.637ns
-   Maximum output required time after clock: 0.751ns
-   Maximum combinational path delay: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.912ns
 
 Timing Details:
 ---------------
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock '_n0023<1>'
-  Total number of paths / destination ports: 17 / 6
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 18 / 6
 -------------------------------------------------------------------------
-Offset:              0.637ns (Levels of Logic = 2)
-  Source:            a<2> (PAD)
-  Destination:       b_5 (LATCH)
-  Destination Clock: _n0023<1> falling
-
-  Data Path: a<2> to b_5
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             7   0.001   0.539  a_2_IBUF (a_2_IBUF)
-     LUT3:I0->O            1   0.097   0.000  _n0040<2>1 (_n0040)
-     LD:D                     -0.028          b_5
-    ----------------------------------------
-    Total                      0.637ns (0.098ns logic, 0.539ns route)
-                                       (15.4% logic, 84.6% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock '_n0023<1>'
-  Total number of paths / destination ports: 6 / 6
--------------------------------------------------------------------------
-Offset:              0.751ns (Levels of Logic = 1)
-  Source:            b_6 (LATCH)
+Delay:               0.912ns (Levels of Logic = 3)
+  Source:            a<0> (PAD)
   Destination:       b<6> (PAD)
-  Source Clock:      _n0023<1> falling
 
-  Data Path: b_6 to b<6>
+  Data Path: a<0> to b<6>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     LD:G->Q               1   0.472   0.279  b_6 (b_6)
+     IBUF:I->O             6   0.001   0.534  a_0_IBUF (a_0_IBUF)
+     LUT3:I0->O            1   0.097   0.279  Mram_b51 (b_6_OBUF)
      OBUF:I->O                 0.000          b_6_OBUF (b<6>)
     ----------------------------------------
-    Total                      0.751ns (0.472ns logic, 0.279ns route)
-                                       (62.8% logic, 37.2% route)
+    Total                      0.912ns (0.098ns logic, 0.814ns route)
+                                       (10.7% logic, 89.3% route)
 
 =========================================================================
 
@@ -316,14 +292,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.06 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.58 secs
  
 --> 
 
 Total memory usage is 4615260 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

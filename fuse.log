@@ -10,8 +10,7 @@ Completed static elaboration
 Compiling module binary_TC
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 2 Verilog Units
 Built simulation executable M:/desktop/project file/rns_modulo_adder/binary_TC_isim_beh.exe
-Fuse Memory Usage: 26984 KB
-Fuse CPU Usage: 436 ms
+Fuse Memory Usage: 27620 KB
+Fuse CPU Usage: 655 ms
