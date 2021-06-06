@@ -1,8 +1,11 @@
-set -tmpdir "M:/desktop/project file/rns_modulo_adder/xst/projnav.tmp"
-set -xsthdpdir "M:/desktop/project file/rns_modulo_adder/xst"
-run -compileonly yes
+set -tmpdir "xst/projnav.tmp"
+set -xsthdpdir "xst"
+run
+-ifn binary_TC.prj
+-ofn binary_TC
+-ofmt NGC
 -p xc7a100t-3-csg324
--top ohc_9_modulo_adder
+-top binary_TC
 -opt_mode Speed
 -opt_level 1
 -power NO
@@ -47,4 +50,3 @@ run -compileonly yes
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
--ifn ohc_9_modulo_adder.prj

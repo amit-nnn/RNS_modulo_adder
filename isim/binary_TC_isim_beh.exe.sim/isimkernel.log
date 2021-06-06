@@ -1,0 +1,5 @@
+Command line:
+   binary_TC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  64468
