@@ -22,6 +22,13 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="rns_modulo_adder.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TC_to_binary.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="TC_to_binary.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="TC_to_binary.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TC_to_binary_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TC_to_binary_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TC_to_binary_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TC_to_binary_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="binary_TC.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="binary_TC.lso"/>
@@ -31,10 +38,8 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="binary_TC.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="binary_TC.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="binary_TC.xst"/>
-    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="binary_TC_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="binary_TC_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="binary_TC_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="binary_TC_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="binary_TC_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="binary_TC_summary.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="binary_TC_xst.xrpt"/>
@@ -84,9 +89,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1622975805" xil_pn:in_ck="-5771453740465665600" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1622975805">
+    <transform xil_pn:end_ts="1622976582" xil_pn:in_ck="-5710732361468868479" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1622976582">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="TC_to_binary.v"/>
       <outfile xil_pn:name="binary_TC.v"/>
       <outfile xil_pn:name="ohc_11_modulo_adder.v"/>
       <outfile xil_pn:name="ohc_5_modulo_adder.v"/>
@@ -95,11 +101,11 @@
       <outfile xil_pn:name="tc_5_modulo_adder.v"/>
       <outfile xil_pn:name="tcr_7_modulo_adder.v"/>
     </transform>
-    <transform xil_pn:end_ts="1622968501" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1102520982171491634" xil_pn:start_ts="1622968501">
+    <transform xil_pn:end_ts="1622976525" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9144625899559148396" xil_pn:start_ts="1622976525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1622968501" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-1584742670037548464" xil_pn:start_ts="1622968501">
+    <transform xil_pn:end_ts="1622976525" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5881142914312590158" xil_pn:start_ts="1622976525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -107,9 +113,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1622975812" xil_pn:in_ck="-5771453740465665600" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1622975812">
+    <transform xil_pn:end_ts="1622976525" xil_pn:in_ck="-5710732361468868479" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1622976525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TC_to_binary.v"/>
       <outfile xil_pn:name="binary_TC.v"/>
       <outfile xil_pn:name="ohc_11_modulo_adder.v"/>
       <outfile xil_pn:name="ohc_5_modulo_adder.v"/>
@@ -118,20 +129,28 @@
       <outfile xil_pn:name="tc_5_modulo_adder.v"/>
       <outfile xil_pn:name="tcr_7_modulo_adder.v"/>
     </transform>
-    <transform xil_pn:end_ts="1622975815" xil_pn:in_ck="-5771453740465665600" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4298318297767717171" xil_pn:start_ts="1622975812">
+    <transform xil_pn:end_ts="1622976528" xil_pn:in_ck="-5710732361468868479" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="1688295785302048983" xil_pn:start_ts="1622976525">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="binary_TC_beh.prj"/>
-      <outfile xil_pn:name="binary_TC_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TC_to_binary_beh.prj"/>
+      <outfile xil_pn:name="TC_to_binary_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1622975815" xil_pn:in_ck="9172158246299105241" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3228692737458476554" xil_pn:start_ts="1622975815">
+    <transform xil_pn:end_ts="1622976529" xil_pn:in_ck="-6565904799641558971" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3512964544648264826" xil_pn:start_ts="1622976528">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="binary_TC_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TC_to_binary_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -166,8 +185,12 @@
     <transform xil_pn:end_ts="1622975798" xil_pn:in_ck="-5771453740465665600" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="1068042376362250837" xil_pn:start_ts="1622975786">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="binary_TC.lso"/>
       <outfile xil_pn:name="binary_TC.ngc"/>
@@ -176,7 +199,6 @@
       <outfile xil_pn:name="binary_TC.stx"/>
       <outfile xil_pn:name="binary_TC.syr"/>
       <outfile xil_pn:name="binary_TC.xst"/>
-      <outfile xil_pn:name="binary_TC_beh.prj"/>
       <outfile xil_pn:name="binary_TC_stx_beh.prj"/>
       <outfile xil_pn:name="binary_TC_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
