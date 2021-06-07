@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "M:/desktop/project file/rns_modulo_adder/TC_to_binary_isim_beh.exe" -prj "M:/desktop/project file/rns_modulo_adder/TC_to_binary_beh.prj" "TC_to_binary" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "M:/desktop/project file/rns_modulo_adder/TC_11_modulo_adder_isim_beh.exe" -prj "M:/desktop/project file/rns_modulo_adder/TC_11_modulo_adder_beh.prj" "work.TC_11_modulo_adder" "work.glbl" 

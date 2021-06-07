@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "M:/desktop/project file/rns_modulo_adder/tc_5_modulo_adder.xst" -ofn "M:/desktop/project file/rns_modulo_adder/tc_5_modulo_adder.syr" 

@@ -4,13 +4,13 @@ Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Parameter xsthdpdir set to M:/desktop/project file/rns_modulo_adder/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Reading design: TC_to_binary.prj
 
@@ -43,8 +43,8 @@ Analyzing Verilog file "M:\desktop\project file\rns_modulo_adder\TC_to_binary.v"
 Parsing module <TC_to_binary>.
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 6.54 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.33 secs
  
 --> 
 

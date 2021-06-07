@@ -1,15 +1,15 @@
 Command line:
    tc_5_modulo_adder_isim_beh.exe
      -simmode  gui
-     -simrunnum  1
-     -socket  57255
+     -simrunnum  0
+     -socket  52303
 
-Sat Jun 05 14:29:45 2021
+Mon Jun 07 15:16:41 2021
 
 
- Elaboration Time: 0.03125 sec
+ Elaboration Time: 0.046875 sec
 
- Current Memory Usage: 5146.13 Meg
+ Current Memory Usage: 5146.14 Meg
 
  Total Signals          : 27
  Total Nets             : 55
@@ -21,9 +21,9 @@ Sat Jun 05 14:29:45 2021
  Total Scalar Nets and Variables : 136
 Total Line Count : 46
 
- Total Simulation Time: 0.03125 sec
+ Total Simulation Time: 0.046875 sec
 
- Current Memory Usage: 4674.27 Meg
+ Current Memory Usage: 4674.29 Meg
 
-Sat Jun 05 16:39:01 2021
+Mon Jun 07 15:19:59 2021
 

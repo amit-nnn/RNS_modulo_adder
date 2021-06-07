@@ -4,12 +4,11 @@ module tc_5_modulo_adder(a,b,remainder);
     output[4:1]remainder;
 
     wire [8:1]stage1;
-    wire sel,T0,T1,T2,T3;
     wire [4:1]stage2;
+    wire sel,T0,T1,T2,T3;
     wire [3:1]stage3;
     wire [2:1]stage4;
-    wire [4:1]sum0;
-    wire [4:1]sum1;
+    wire [4:1]sum0,sum1;
 
     parameter GND = 1'b0;
 
@@ -23,7 +22,7 @@ module tc_5_modulo_adder(a,b,remainder);
     assign stage1[1] =  (a[1] & b[4]);
 
     assign T0 = ~(stage1[8] | stage1[6] | stage1[4] | stage1[2]);
-    assign sel=  (stage1[7] | stage1[5] | stage1[3] | stage1[1]);
+    assign sel= ~(stage1[7] | stage1[5] | stage1[3] | stage1[1]);
 
     assign stage2[4] = (stage1[8] | stage1[7]);
     assign stage2[3] = (stage1[6] | stage1[5]);

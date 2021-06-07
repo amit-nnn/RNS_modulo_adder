@@ -1,2 +1,2 @@
-verilog work "TC_to_binary.v"
+verilog work "TC_11_modulo_adder.v"
 verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"
