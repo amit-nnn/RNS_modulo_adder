@@ -1,0 +1,3 @@
+verilog work "OHC_11_to_binary.v"
+verilog work "binary_to_11_OHC.v"
+verilog work "modulo_11_OHC_adder.v"

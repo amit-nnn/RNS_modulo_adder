@@ -1,0 +1,4 @@
+verilog work "TC_11_to_binary.v"
+verilog work "TC_11_modulo_adder.v"
+verilog work "Binary_to_11_TC.v"
+verilog work "modulo_11_TC_adder.v"

@@ -1,0 +1,5 @@
+verilog work "OHC_5_to_binary.v"
+verilog work "ohc_5_modulo_adder.v"
+verilog work "binary_to_5_OHC.v"
+verilog work "modulo_5_OHC_adder.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

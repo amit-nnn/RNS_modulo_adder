@@ -4,6 +4,7 @@ module binary_to_11_OHC(in,out);
     output reg[11:1] out;
     always @(*) begin
        case (in)
+            4'h0:out = 11'b00000000001;
             4'h1:out = 11'b00000000010;
             4'h2:out = 11'b00000000100;
             4'h3:out = 11'b00000001000;
@@ -14,7 +15,7 @@ module binary_to_11_OHC(in,out);
             4'h8:out = 11'b00100000000;
             4'h9:out = 11'b01000000000;
             4'hA:out = 11'b10000000000;
-            default:out = 11'b00000000000;
+            default:out=11'bxxxxxxxxxxx;
        endcase 
     end
 endmodule

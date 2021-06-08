@@ -1,10 +1,10 @@
 `timescale 1ns / 1ps
-module TC_5_modulo_adder(a,b,sum);
+module OHC_5_modulo_adder(a,b,sum);
 
-    input [4:0]a,b;
+    input  [4:0]a,b;
     output [4:0]sum;
-    wire [10:1]stage1;
-    wire [10:1]stage2;
+    wire   [10:1]stage1;
+    wire   [10:1]stage2;
 
     assign stage1[1] = (a[4] & b[4]);
     assign stage1[2] = (a[4] | b[4]);
@@ -33,6 +33,4 @@ module TC_5_modulo_adder(a,b,sum);
     assign sum[2] = (stage1[7] | stage2[5] | stage2[6]);
     assign sum[3] = (stage1[1] | stage2[9] | stage2[8]);
     assign sum[4] = (stage1[5] | stage2[9] | stage2[10]);
-
-
 endmodule
