@@ -8,7 +8,16 @@
 <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;M:/desktop/project file/rns_modulo_adder/TC_11_modulo_adder.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;M:/desktop/project file/rns_modulo_adder/OHC_11_to_binary.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;M:/desktop/project file/rns_modulo_adder/OHC_5_to_binary.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;M:/desktop/project file/rns_modulo_adder/OHC_7_to_binary.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;M:/desktop/project file/rns_modulo_adder/OHC_9_to_binary.v&quot; into library work</arg>
 </msg>
 
 </messages>

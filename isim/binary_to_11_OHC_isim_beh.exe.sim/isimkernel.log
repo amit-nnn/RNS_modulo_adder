@@ -1,0 +1,29 @@
+Command line:
+   binary_to_11_OHC_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56326
+
+Tue Jun 08 14:01:26 2021
+
+
+ Elaboration Time: 0.015625 sec
+
+ Current Memory Usage: 5146.66 Meg
+
+ Total Signals          : 14
+ Total Nets             : 28
+ Total Signal Drivers   : 6
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 8
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 119
+Total Line Count : 27
+
+ Total Simulation Time: 0.015625 sec
+
+ Current Memory Usage: 4674.8 Meg
+
+Tue Jun 08 14:04:06 2021
+
